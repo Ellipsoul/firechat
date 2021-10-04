@@ -41,5 +41,32 @@
     }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
+
+  <html>
+  ...
+  <body>
+    <!-- Add Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script> 
+
+    <!-- Firebase Configuration -->
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBuMQpCgpIgvG63nQh0ItkFzj2sXl7PSsA",
+        authDomain: "firechat-de992.firebaseapp.com",
+        projectId: "firechat-de992",
+        storageBucket: "firechat-de992.appspot.com",
+        messagingSenderId: "11014945509",
+        appId: "1:11014945509:web:71a6005b054a9c61fc720c",
+        measurementId: "G-CCS8L6T1CS"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+  </body>
+</html>
 </body>
 </html>
