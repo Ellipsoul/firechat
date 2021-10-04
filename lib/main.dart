@@ -1,3 +1,6 @@
+import 'package:firechat/styles.dart';
+import 'package:firechat/landing_screen.dart';
+
 import 'package:flutter/material.dart';
 
 // Import the firebase_core plugin
@@ -32,17 +35,32 @@ class _AppState extends State<App> {
       builder: (context, snapshot) {
         // Check for errors
         if (snapshot.hasError) {
-          return SomethingWentWrong();
+          return Center(
+            child: Text('$snapshot.error'),
+          );
         }
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return MyAwesomeApp();
+          return MyApp();
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
-        return Loading();
+        return const Text('Loading...');
       },
+    );
+  }
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Firechat',
+      debugShowCheckedModeBanner: false,
+      theme: themeStyle,
+      home: const LandingScreen(),
     );
   }
 }
