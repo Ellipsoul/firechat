@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "11014945509",
+    "project_id": "firechat-de992",
+    "storage_bucket": "firechat-de992.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11014945509:android:9e72a85a5eedc9e7fc720c",
+        "android_client_info": {
+          "package_name": "com.ellipsoul.firechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11014945509-volo3mkb9o5msu02fuvkn3go6toc980g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7aou1jUYpEloU7nWDw5mZWpmap99B4jA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11014945509-volo3mkb9o5msu02fuvkn3go6toc980g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
