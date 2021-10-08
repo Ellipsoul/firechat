@@ -101,8 +101,6 @@ class Chats extends StatelessWidget {
               // Map the chat messages to a list
               children: snapshot.data!.docs.map(
                 (DocumentSnapshot doc) {
-                  // Doc id
-                  String id = doc.id;
                   // Chat data
                   Map<String, dynamic> data =
                       doc.data()! as Map<String, dynamic>;

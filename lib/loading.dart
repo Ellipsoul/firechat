@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:firechat/styles.dart';
 
 // Just a rotating progress indicator to show the app is loading
 class Loading extends StatelessWidget {
